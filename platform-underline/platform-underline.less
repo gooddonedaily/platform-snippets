@@ -1,0 +1,13 @@
+.underline-hover(@underline-color) {
+	text-decoration: none;
+	background: linear-gradient(to bottom, @underline-color 0%, @underline-color 100%);
+	background-size: 0% 0.17em;
+	background-repeat: no-repeat;
+	background-position: right bottom;
+	transition: background-size 0.8s ease;
+	padding-bottom: 0.08em;
+	&:hover {
+		background-size: 100% 0.17em;
+		background-position: left bottom;
+	}
+}
